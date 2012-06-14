@@ -1,0 +1,20 @@
+{
+  "name": "Readmill Injector",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "Add 'Send to Readmill' buttons to webpages to easily send EPUB books to your Readmill Library.",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon48.png",
+    "64": "icon64.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*.gutenberg.org/*"],
+      "js": ["inject.js"]
+    }
+  ],
+  "homepage_url": "http://path/to/homepage"
+}
+
