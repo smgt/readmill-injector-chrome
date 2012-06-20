@@ -31,11 +31,11 @@
 
   // Feedbooks
   if(/^https?:\/\/.*\.feedbooks\.com\//.test(document.location.href)) {
-    Readmill.appendChild("a[href$='.epub'].ui-button", function(el) {
+    Readmill.appendChild("a[href$='.epub'][role='button']", function(el) {
       return Readmill.button(el.href, function(button) {
-        button.style.marginTop = "10px";
+        button.style.marginTop = "4px";
         return button;
-      },"large");
+      });
     });
   // Project Gutenberg
   } else if(/^https?:\/\/.*gutenberg\.org\//.test(document.location.href)) {
