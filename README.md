@@ -10,8 +10,10 @@ more about Readmill and sign up for the service over att their [homepage](http:/
 
 ## Supported webpages
 
-Currently the only supported webpage is [Project Gutenberg](http://gutenberg.org). But as more services becomes known I will
-add them.
+  * [Project Gutenberg](http://gutenberg.org)
+  * [Feedbooks](http://www.feedbooks.com)
+
+More services will be added over time.
 
 ## Firefox Add-On
 
