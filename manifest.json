@@ -14,9 +14,11 @@
         "*://gutenberg.org/*",
         "*://*.feedbooks.com/*"
       ],
-      "js": ["inject.js"]
+      "js": [
+        "inject.js"
+      ]
     }
   ],
-  "homepage_url": "http://github.com/simon/chrome-readmill-injector"
+  "homepage_url": "https://chrome.google.com/webstore/detail/nkgomhdfkgplmppghoeakmkjmlcicpba"
 }
 
