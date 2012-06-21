@@ -17,6 +17,15 @@
       "js": [
         "inject.js"
       ]
+    },
+    {
+      "matches": [
+        "*://smgt.me/readmill-injector/*",
+        "file://*"
+      ],
+      "js": [
+        "smgt.js"
+      ]
     }
   ],
   "homepage_url": "https://chrome.google.com/webstore/detail/nkgomhdfkgplmppghoeakmkjmlcicpba"
