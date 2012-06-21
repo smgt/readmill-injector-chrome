@@ -1,6 +1,6 @@
 {
   "name": "Readmill Injector",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "manifest_version": 2,
   "description": "Add 'Send to Readmill' buttons to webpages to easily send EPUB books to your Readmill Library.",
   "icons": {
@@ -20,8 +20,7 @@
     },
     {
       "matches": [
-        "*://smgt.me/readmill-injector/*",
-        "file://*"
+        "*://smgt.me/readmill-injector/*"
       ],
       "js": [
         "smgt.js"
