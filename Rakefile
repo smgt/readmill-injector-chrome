@@ -15,3 +15,13 @@ task :build do
   `zip releases/readmill-injector-#{version}.zip -x 'releases/*' -r *`
   puts "Built readmill-injector-#{version}.zip..."
 end
+
+task :release do
+  manifest = File.open("manifest.json", "r")
+  json = JSON.load(manifest)
+  version = json["version"]
+  `zip releases/readmill-injector-#{version}.zip -x 'releases/*' -r *`
+  puts "Built readmill-injector-#{version}.zip..."
+  `git tag #{version}`
+  puts "Tagging branch with version..."
+end
