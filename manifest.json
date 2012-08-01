@@ -15,7 +15,8 @@
         "*://*.feedbooks.com/*"
       ],
       "js": [
-        "inject.js"
+        "inject.js",
+        "readmill/send.js"
       ]
     },
     {
