@@ -4,8 +4,8 @@
   "manifest_version": 2,
   "description": "Add 'Send to Readmill' buttons to webpages to easily send EPUB books to your Readmill Library.",
   "icons": {
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "48": "data/images/icon48.png",
+    "128": "data/images/icon128.png"
   },
   "content_scripts": [
     {
