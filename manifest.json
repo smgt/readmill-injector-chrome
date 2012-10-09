@@ -11,7 +11,7 @@
     {
       "matches": [
         "*://*.gutenberg.org/*",
-        "*://gutenberg.org/*",
+        "*://gutenberg.org/*"
       ],
       "js": [
         "data/shared/button.js",
@@ -19,7 +19,7 @@
       ]
     },
     {
-      "mathces": [
+      "matches": [
         "*://*.feedbooks.com/*"
       ],
       "js": [
@@ -34,7 +34,17 @@
       "js": [
         "data/chrome/smgt.js"
       ]
+    },
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "data/shared/button.js",
+        "data/shared/generic.js"
+      ]
     }
+
   ],
   "homepage_url": "https://chrome.google.com/webstore/detail/nkgomhdfkgplmppghoeakmkjmlcicpba"
 }
