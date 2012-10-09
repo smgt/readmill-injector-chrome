@@ -12,11 +12,19 @@
       "matches": [
         "*://*.gutenberg.org/*",
         "*://gutenberg.org/*",
+      ],
+      "js": [
+        "data/shared/button.js",
+        "data/shared/gutenberg.js"
+      ]
+    },
+    {
+      "mathces": [
         "*://*.feedbooks.com/*"
       ],
       "js": [
-        "inject.js",
-        "readmill/send.js"
+        "data/shared/button.js",
+        "data/shared/feedbooks.js"
       ]
     },
     {
@@ -24,7 +32,7 @@
         "*://smgt.me/readmill-injector/*"
       ],
       "js": [
-        "smgt.js"
+        "data/chrome/smgt.js"
       ]
     }
   ],
