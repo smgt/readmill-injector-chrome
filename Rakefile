@@ -9,19 +9,30 @@ task :update_readmill do
 end
 
 task :build do
-  manifest = File.open("manifest.json", "r")
-  json = JSON.load(manifest)
-  version = json["version"]
-  `zip releases/readmill-injector-#{version}.zip -x 'releases/*' -r *`
-  puts "Built readmill-injector-#{version}.zip..."
+  manifest = JSON.parse(IO.read("manifest.json"))
+  version = manifest["version"]
+  sha = `git log --quiet --pretty=format:%h -n1 HEAD`
+  files = Array.new
+  %w{data/**/*}.each do |glob|
+    files = files + Dir.glob(glob)
+  end
+  files.push("manifest.json")
+  zip_name = "readmill-injector-chrome-v#{manifest["version"]}-#{sha}.zip"
+  `zip #{zip_name} #{files.join(" ")}`
+  puts "Built #{zip_name}..."
 end
 
 task :release do
-  manifest = File.open("manifest.json", "r")
-  json = JSON.load(manifest)
-  version = json["version"]
-  `zip releases/readmill-injector-#{version}.zip -x 'releases/*' -r *`
-  puts "Built readmill-injector-#{version}.zip..."
-  `git tag #{version}`
+  manifest = JSON.parse(IO.read("manifest.json"))
+  version = manifest["version"]
+  files = Array.new
+  %w{data/**/*}.each do |glob|
+    files = files + Dir.glob(glob)
+  end
+  files.push("manifest.json")
+  zip_name = "readmill-injector-chrome-v#{manifest["version"]}.zip"
+  puts "Building #{zip_name}..."
+  `zip releases/#{zip_name} -x 'releases/*' -r *`
   puts "Tagging branch with version..."
+  `git tag #{version}`
 end
