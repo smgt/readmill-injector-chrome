@@ -1,20 +1,19 @@
 # Chrome Extension - Readmill Injector
 
-This is the repository of the Chrome extension that injects 'Send to Readmill' buttons on webpages that includes EPUB files.
-You can install the extension from...
+This is the repository of the Chrome extension that injects 'Send to Readmill' buttons on webpages.
+
+The extension is available in the [Chrome Extension Webstore](https://chrome.google.com/webstore/detail/readmill-injector/nkgomhdfkgplmppghoeakmkjmlcicpba).
 
 ## Readmill
 
-Readmill is a service that manages your EPUB books and supplies a wonderful iPad application for reading them. You can read
+Readmill is a service that manages your books and supplies a wonderful iPad application for reading them. You can read
 more about Readmill and sign up for the service over att their [homepage](http://readmill.com).
 
 ## Supported webpages
 
-  * [Project Gutenberg](http://gutenberg.org)
-  * [Feedbooks](http://www.feedbooks.com)
+  All webpages with with anchortags with the `href` attribute ending in `pdf`,`epub` or `acsm`.
 
-More services will be added over time.
 
 ## Firefox Add-On
 
-There is also a [Firefox add-on available](https://addons.mozilla.org/en-US/firefox/addon/readmill-injector/) ( [source](https://github.com/simon/fx-readmill-inject) ).
+There is also a [Firefox add-on available](https://addons.mozilla.org/en-US/firefox/addon/readmill-injector/) ( [source](https://github.com/simon/readmill-injector-firefox) ).
